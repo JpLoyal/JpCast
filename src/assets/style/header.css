@@ -1,0 +1,40 @@
+header {
+    padding: .1rem 0;
+    background-color: var(--azul-escuro);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lista__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.3rem;
+}
+
+.lista__imagem {
+    width: 20px;
+    height: 20px;
+}
+
+.lista__butao {
+    color: var(--branco-principal);
+    background: transparent;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--fonte-principal);
+    border: none;
+}
+
+@media screen and (min-width: 1024px) {
+    header { 
+        display: none;
+    }
+}

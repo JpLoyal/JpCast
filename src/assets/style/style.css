@@ -1,0 +1,38 @@
+@import url(./header.css);
+@import url(./main.css);
+
+:root {
+    --gradiente-azul: linear-gradient(180deg, #154580 0%, #041833 100%);
+    --fonte-principal: 'Open Sans';
+    --azul-escuro: #041833dc;
+    --azul-aside: #041833;
+    --azul-secundario: #C4C4C433;
+    --branco-principal: #FFFFFF;
+}
+
+body {
+    background: var(--gradiente-azul);
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+    background-repeat: no-repeat;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--branco-principal);
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        grid-template-columns: 1fr 6fr;
+    }
+}

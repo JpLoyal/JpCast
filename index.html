@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraCast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/assets/style/reset.css">
+    <link rel="stylesheet" href="./src/assets/style/style.css">
+</head>
+
+<body>
+    <header>
+        <ul class="lista">
+            <li class="lista__item"><img src="./src/assets/img/icone-home-mb.svg" alt="" class="lista__imagem"><button class="lista__butao">Início</button></li>
+            <li class="lista__item"><img src="./src/assets/img/icone-busca-mb.svg" alt="" class="lista__imagem"><button class="lista__butao">Buscar</button></li>
+            <li class="lista__item"><img src="./src/assets/img/icone-biblioteca-mb.svg" alt="" class="lista__imagem"><button class="lista__butao">Sua Biblioteca</button></li>
+        </ul>
+    </header>
+
+    <aside class="barra-lateral">
+        <img src="./src/assets/img/alura-Cast_logo.svg" alt="Logo da AluraCast" class="barra-lateral__logo">
+        <div class="barra-lateral__menu">
+            <a href="#" class="barra-lateral__menu__item"><img src="./src/assets/img/icone-home.svg" alt="Icone de voltar" class="item__icone">Home</a>
+            <a href="#" class="barra-lateral__menu__item"><img src="./src/assets/img/icone-busca.svg" alt="Icone de busca" class="item__icone">Buscar</a>
+            <a href="#" class="barra-lateral__menu__item"><img src="./src/assets/img/icone-biblioteca.svg" alt="Icone de biblioteca" class="item__icone">Sua Biblioteca</a>
+            <h2 class="barra-lateral__menu__titulo">Playlists</h2>
+            <a href="#" class="barra-lateral__menu__item"><img src="./src/assets/img/icone-add_box.svg" alt="Icone de adicionar playlist" class="item__icone item__icone--large">Criar Playlist</a>
+            <a href="#" class="barra-lateral__menu__item"><img src="./src/assets/img/icone-stars.svg" alt="Icone de favoritar" class="item__icone item__icone--large">Podcasts salvos</a>
+        </div>
+    </aside>
+
+    <section class="b-reproducao">
+
+        <div class="b-reproducao__card">
+            <img src="./src/assets/img/hipsters-4.svg" alt="Logo da Hipster" class="b-reproducao__logo">
+            <h2 class="b-reproducao__titulo">Android Jetpack</h2>
+            <p class="b-reproducao__autor">Hipster Ponto Tech</p>
+        </div>
+
+        <div class="b-reproducao__set">
+            <div class="b-reproducao__set__musica">
+                <button class="botao_reproducao"><img src="./src/assets/img/icone-replay.svg" alt="botão de voltar" class="botao__reproducao__icone"></button>
+                <button class="botao_reproducao"><img src="./src/assets/img/icone-anterior.svg" alt="botão de música anterior" class="botao__reproducao__icone"></button>
+                <button class="botao_reproducao"><img src="./src/assets/img/icone-play.svg" alt="botão de play" class="botao__reproducao__icone"></button>
+                <button class="botao_reproducao"><img src="./src/assets/img/icone-proximo.svg" alt="botão de próxima música" class="botao__reproducao__icone"></button>
+                <button class="botao_reproducao"><img src="./src/assets/img/icone-avancar.svg" alt="botão de avançar" class="botao__reproducao__icone"></button>
+            </div>
+            <div class="b-reproducao__set__prog">
+                <p class="b-reproducao__set__p">13:27</p><div class="b-reproducao__set__p b-reproducao__set__p--barra"><p class="barra-cinza"></p></div><p class="b-reproducao__set__p">18:35</p>
+            </div>
+        </div>
+
+        <div class="b-reproducao__volume">
+            <button class="botao_reproducao"><img src="./src/assets/img/icone-volume-down.svg" alt="Botão de diminuir o volume" class="b-reproducao__volume__img"></button>
+            <div class="b-reproducao__volume__prog"><p class="barra-cinza"><p></p></div>
+            <button class="botao_reproducao"><img src="./src/assets/img/icone-volume-up.svg" alt="Botão de aumentar o volume" class="b-reproducao__volume__img"></button>
+        </div>
+    </section>
+
+    <main>
+
+        <button class="botao__voltar-avancar"><img src="./src/assets/img/seta-voltar.svg" alt="Botão de voltar" class="seta-voltar"><img src="./src/assets/img/seta-avançar.svg" alt="Botão de avançar" class="seta-avancar"></button>
+
+        <section class="secao recentes">
+            <h2 class="secao__titulo-principal secao__titulo-principal--first">Tocados recentemente</h2>
+            <ul class="lista-recentes lista-recentes--default">
+                <li class="lista-recentes__item">
+                    <img src="./src/assets/img/hipsters-9.svg" alt="Cast do Android JetPack" class="recentes__imagem">
+                    <h3 class="recentes__titulo">Android Jetpack</h3>
+                </li>
+                <li class="lista-recentes__item">
+                    <img src="./src/assets/img/layers-1.svg" alt="Cast do Layers" class="recentes__imagem">
+                    <h3 class="recentes__titulo">Tipos de Corte</h3>
+                </li> 
+                <li class="lista-recentes__item">
+                    <img src="./src/assets/img/carreiras-1.svg" alt="Cast de Carreiras" class="recentes__imagem">
+                    <h3 class="recentes__titulo">O fim</h3>
+                </li> 
+                <li class="lista-recentes__item"> 
+                    <img src="./src/assets/img/scuba-1.svg" alt="Cast do Scuba" class="recentes__imagem">
+                    <h3 class="recentes__titulo">Da advocacia à Tech</h3>
+                </li> 
+                <li class="lista-recentes__item">
+                    <img src="./src/assets/img/boss-1.svg" alt="Cast do Boss" class="recentes__imagem">
+                    <h3 class="recentes__titulo">Izabel Gallera</h3>
+                </li>
+                <li class="lista-recentes__item">
+                    <img src="./src/assets/img/hipsters-7.svg" alt="Cast do Hipster" class="recentes__imagem">
+                    <h3 class="recentes__titulo">Ecossistema Crypto</h3>
+                </li>
+            </ul>
+
+            <ul class="lista-recentes lista-recentes--second">
+                <li class="lista-recentes__item">
+                    <img src="./src/assets/img/hipsters-9.svg" alt="Cast do Android JetPack" class="recentes__imagem">
+                    <div class="lista-recentes__container">
+                        <h3 class="recentes__titulo">Android Jetpack</h3>
+                        <p class="recentes__titulo__autor">Hipster Ponto Tech</p>
+                    </div>
+                    <img src="./src/assets/img/botao-play.svg" alt="Botão de play" class="recentes__item__botao">
+                </li>
+                <li class="lista-recentes__item">
+                    <img src="./src/assets/img/layers-1.svg" alt="Cast do Layers" class="recentes__imagem">
+                    <div class="lista-recentes__container">
+                        <h3 class="recentes__titulo">Tipos de Corte</h3>
+                        <p class="recentes__titulo__autor">Layers Ponto Tech</p>
+                    </div>
+                    <img src="./src/assets/img/botao-play.svg" alt="Botão de play" class="recentes__item__botao">
+                </li> 
+                <li class="lista-recentes__item">
+                    <img src="./src/assets/img/carreiras-1.svg" alt="Cast de Carreiras" class="recentes__imagem">
+                    <div class="lista-recentes__container">
+                        <h3 class="recentes__titulo">O fim</h3>
+                        <p class="recentes__titulo__autor">Carreiras sem Fronteiras</p>
+                    </div>
+                    <img src="./src/assets/img/botao-play.svg" alt="Botão de play" class="recentes__item__botao">
+                </li> 
+                <li class="lista-recentes__item"> 
+                    <img src="./src/assets/img/scuba-1.svg" alt="Cast do Scuba" class="recentes__imagem">
+                    <div class="lista-recentes__container">
+                        <h3 class="recentes__titulo">Da advocacia à Tech</h3>
+                        <p class="recentes__titulo__autor">Scuba Ponto Dev</p>
+                    </div>
+                    <img src="./src/assets/img/botao-play.svg" alt="Botão de play" class="recentes__item__botao">
+                </li> 
+                <li class="lista-recentes__item">
+                    <img src="./src/assets/img/boss-1.svg" alt="Cast do Boss" class="recentes__imagem">
+                    <div class="lista-recentes__container">
+                        <h3 class="recentes__titulo">Izabel Gallera</h3>
+                        <p class="recentes__titulo__autor">Like a Boss</p>
+                    </div>
+                    <img src="./src/assets/img/botao-play.svg" alt="Botão de play" class="recentes__item__botao">
+                </li>
+                <li class="lista-recentes__item">
+                    <img src="./src/assets/img/hipsters-7.svg" alt="Cast do Hipster" class="recentes__imagem">
+                    <div class="lista-recentes__container">
+                        <h3 class="recentes__titulo">Ecossistema Crypto</h3>
+                        <p class="recentes__titulo__autor">Hipsters Ponto Tech</p>
+                    </div>
+                    <img src="./src/assets/img/botao-play.svg" alt="Botão de play" class="recentes__item__botao">
+                </li>
+            </ul>
+        </section>
+
+        <section class="secao secao--hipster">
+            <h2 class="secao__titulo-principal">Hipster Ponto Tech</h2>
+            <div class="secao__contaner__titulo">
+                <h2 class="secao__titulo-principal--resp">Hipster Ponto Tech</h2>
+                <p class="secao__titulo-principal__opcao">Ver mais</p>
+            </div>
+            <ul class="secao__lista">
+                <li class="secao__lista__item secao__lista__item--first">
+                    <img src="./src/assets/img/hipsters-3.svg" alt="Cast do Hipster" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">GitHub e nossas Funcionalidades Preferidas</h3>
+                        <p class="lista__autor">Hipster Ponto Tech</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--second">
+                    <img src="./src/assets/img/hipsters-4.svg" alt="Cast do Hipster" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Android Jetpack</h3>
+                        <p class="lista__autor">Hipster Ponto Tech</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--third">
+                    <img src="./src/assets/img/hipsters-5.svg" alt="Cast do Hipster" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Softskills em Tech</h3>
+                        <p class="lista__autor">Hipster Ponto Tech</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--fourth">
+                    <img src="./src/assets/img/hipsters-6.svg" alt="Cast do Hipster" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Educação em Dados e Machine Learning</h3>
+                        <p class="lista__autor">Hipsters Ponto Tech</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--fifth">
+                    <img src="./src/assets/img/hipsters-7.svg" alt="Cast do Hipster" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Ecossistema Crypto</h3>
+                        <p class="lista__autor">Hipsters Ponto Tech</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--sixth">
+                    <img src="./src/assets/img/hipsters-8.svg" alt="Cast do Hipster" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Educação, Tecnologia e Periferia</h3>
+                        <p class="lista__autor">Hipsters Ponto Tech</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="secao secao-indicados">
+            <h2 class="secao__titulo-principal">Indicados para você</h2>
+            <div class="secao__contaner__titulo">
+                <h2 class="secao__titulo-principal--resp">Indicados para você</h2>
+                <p class="secao__titulo-principal__opcao">Ver mais</p>
+            </div>
+            <ul class="secao__lista">
+                <li class="secao__lista__item secao__lista__item--first">
+                    <img src="./src/assets/img/layers-2.svg" alt="Cast do Layers" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Montando seu estúdio</h3>
+                        <p class="lista__autor">Layers Ponto Tech</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--second">
+                    <img src="./src/assets/img/scuba-2.svg" alt="Cast do Scuba" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Voltando ao mercado após a maternidade</h3>
+                        <p class="lista__autor">Scuba Ponto Dev</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--third">
+                    <img src="./src/assets/img/scuba-3.svg" alt="Cast do Hipster" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Reencontrando a paixão por programar</h3>
+                        <p class="lista__autor">Scuba Ponto Dev</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--fourth">
+                    <img src="./src/assets/img/fronteiras-1.svg" alt="Cast do Dev sem fronteiras" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Suporte UX/UI</h3>
+                        <p class="lista__autor">Dev sem Fronteiras</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--fifth">
+                    <img src="./src/assets/img/layers-3.svg" alt="Cast do Layers" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Prospecção de clientes</h3>
+                        <p class="lista__autor">Layers Ponto Tech</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--sixth">
+                    <img src="./src/assets/img/boss-2.svg" alt="Cast do Like a Boss" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Mariana Vasconcelos: CEO  Agrosmart</h3>
+                        <p class="lista__autor">Like a Boss</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="secao secao--dev">
+            <h2 class="secao__titulo-principal">Dev sem Fronteiras</h2>
+            <div class="secao__contaner__titulo">
+                <h2 class="secao__titulo-principal--resp">Dev sem fronteiras</h2>
+                <p class="secao__titulo-principal__opcao">Ver mais</p>
+            </div>
+            <ul class="secao__lista">
+                <li class="secao__lista__item secao__lista__item--first ">
+                    <img src="./src/assets/img/fronteiras-2.svg" alt="Cast do Dev sem Fronteiras" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Vida e Trabalho da Costa leste</h3>
+                        <p class="lista__autor">Dev sem Fronteiras</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--second">
+                    <img src="./src/assets/img/fronteiras-3.svg" alt="Cast do Dev sem Fronteiras" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Agile coach e desenvolvedor</h3>
+                        <p class="lista__autor">Dev sem Fronteiras</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--third">
+                    <img src="./src/assets/img/fronteiras-4.svg" alt="Cast do Hipster" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Desenvolvedor</h3>
+                        <p class="lista__autor">Dev sem Fronteiras</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--fourth">
+                    <img src="./src/assets/img/fronteiras-5.svg" alt="Cast do Hipster" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Suporte UX/UI</h3>
+                        <p class="lista__autor">Dev sem Fronteiras</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--fifth">
+                    <img src="./src/assets/img/fronteiras-6.svg" alt="Cast do Dev sem Fronteiras" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Engenheiro de Algoritmos</h3>
+                        <p class="lista__autor">Dev sem Fronteiras</p>
+                    </div>
+                </li>
+                <li class="secao__lista__item secao__lista__item--sixth">
+                    <img src="./src/assets/img/fronteiras-7.svg" alt="Cast do Dev sem Fronteiras" class="item__imagem">
+                    <div class="lista__container">
+                        <h3 class="lista__titulo">Engenheiro de Software</h3>
+                        <p class="lista__autor">Dev sem Fronteiras</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
